@@ -1,0 +1,58 @@
+{
+  "name": "plain-mock-server",
+  "version": "1.0.0",
+  "description": "Create mock services easily and quickly with koa web framework",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --forceExit",
+    "test-coverage": "jest --coverage --silent --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f2ad3v/plain-mock-server.git"
+  },
+  "keywords": [
+    "MOCK",
+    "MOQ",
+    "SERVER",
+    "KOA"
+  ],
+  "author": "f2a.d3v",
+  "license": "MIT",
+  "homepage": "https://github.com/f2ad3v/plain-mock-server#readme",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^9.4.0",
+    "path-to-regexp": "^6.1.0"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{ts,js}",
+      "!**/node_modules/**",
+      "!**/build/**",
+      "!**/coverage/**"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)x?$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/",
+      "/coverage/"
+    ]
+  }
+}
